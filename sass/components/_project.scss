@@ -1,0 +1,69 @@
+@use "../utils" as *;
+$fontSizeProject: 18px;
+
+.project {
+  @include flex;
+  margin-bottom: 94px;
+}
+
+.project__item {
+  transition: box-shadow var(--transition-duration) var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: var(--pointer);
+
+    .project__overlay {
+      transform: translateY(0);
+    }
+  }
+}
+
+.project__box {
+  width: 370px;
+  height: 294px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project__overlay {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: var(--main-selection-color);
+  opacity: 0.9;
+  padding: 0 45px 0 24px;
+  transform: translateY(101%);
+  transition: transform var(--transition-duration) var(--cubic-bezier);
+
+  &-text {
+    color: var(--main-background-color);
+    font-size: $fontSizeProject;
+    line-height: 1.55;
+    letter-spacing: var(--main-letter-spacing);
+  }
+}
+
+.project__case {
+  @include bordered(#eee);
+  border-top: none;
+  padding: 20px 23px 19px 23px;
+}
+
+.project__name {
+  font-size: $fontSizeProject;
+  line-height: 2;
+  letter-spacing: calc(var(--main-letter-spacing) * 2);
+  margin-bottom: 4px;
+}
+
+.project__type {
+  color: var(--secondary-text-color);
+  line-height: 1.88;
+  letter-spacing: var(--main-letter-spacing);
+}

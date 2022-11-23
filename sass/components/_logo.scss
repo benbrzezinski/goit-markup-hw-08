@@ -1,0 +1,21 @@
+.header__logo {
+  margin-right: 93px;
+}
+
+.logo {
+  color: var(--main-selection-color);
+  font-family: "Raleway";
+  font-weight: var(--main-font-weight);
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: var(--main-letter-spacing);
+
+  &--color-change {
+    color: #000;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &--color-switch {
+    color: var(--main-background-color);
+  }
+}

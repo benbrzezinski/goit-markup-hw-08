@@ -1,0 +1,37 @@
+@use "../utils" as *;
+
+.team-box {
+  background-color: var(--secondary-background-color);
+}
+
+.team {
+  @include flex;
+}
+
+.team__item {
+  background-color: var(--main-background-color);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
+    0 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 var(--main-border-radius) var(--main-border-radius);
+}
+
+.team__img {
+  margin-bottom: 30px;
+}
+
+.team__name {
+  font-size: 16px;
+  font-weight: calc(var(--main-font-weight) - 200);
+  line-height: 1.19;
+  letter-spacing: var(--main-letter-spacing);
+  text-align: var(--text-center);
+  margin-bottom: 10px;
+}
+
+.team__text {
+  color: var(--secondary-text-color);
+  line-height: 1.19;
+  letter-spacing: var(--main-letter-spacing);
+  text-align: var(--text-center);
+  margin-bottom: 16px;
+}

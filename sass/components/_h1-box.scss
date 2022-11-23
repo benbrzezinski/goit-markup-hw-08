@@ -1,0 +1,33 @@
+@use "../utils" as *;
+$rgbaH1Box: rgba(47, 48, 58, 0.4);
+
+h1 {
+  color: var(--main-background-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: calc(var(--main-letter-spacing) * 2);
+  text-align: var(--text-center);
+  text-transform: var(--uppercase);
+  margin: 0 250px;
+}
+
+.h1-box {
+  background-image: linear-gradient(90deg, $rgbaH1Box, $rgbaH1Box),
+    url("../images/img-h1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 200px 0;
+  margin-bottom: 94px;
+}
+
+.h1-box__btn-case {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.h1-box__btn {
+  @include btn;
+  padding: 10px 41px 10px 42px;
+}

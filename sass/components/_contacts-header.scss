@@ -1,0 +1,29 @@
+.contacts-header {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--main-gap);
+}
+
+.contacts-header__link {
+  color: var(--secondary-text-color);
+  font-weight: calc(var(--main-font-weight) - 200);
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+  letter-spacing: calc(var(--main-letter-spacing) - 0.01em);
+  transition: color var(--transition-duration) var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
+    color: var(--main-selection-color);
+  }
+}
+
+.contacts-header__icon {
+  --icon-envelope-smartphone: currentColor;
+  transform: translateY(1px);
+  margin-right: 6px;
+
+  &--setup {
+    transform: translateY(3px);
+  }
+}

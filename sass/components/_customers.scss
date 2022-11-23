@@ -1,0 +1,30 @@
+@use "../utils" as *;
+
+.customers {
+  @include flex;
+}
+
+.customers__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  @include bordered(var(--main-icons-color));
+  border-radius: var(--main-border-radius);
+  transition: border-color var(--transition-duration) var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
+    border-color: var(--main-selection-color);
+
+    .customers__icon {
+      fill: var(--main-selection-color);
+    }
+  }
+}
+
+.customers__icon {
+  fill: var(--main-icons-color);
+  transition: fill var(--transition-duration) var(--cubic-bezier);
+}

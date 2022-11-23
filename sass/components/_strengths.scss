@@ -1,0 +1,32 @@
+@use "../utils" as *;
+
+.strengths {
+  @include flex;
+}
+
+.strengths__item {
+  width: 270px;
+}
+
+.strengths__header {
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+  letter-spacing: var(--main-letter-spacing);
+  text-transform: var(--uppercase);
+  margin-bottom: 10px;
+}
+
+.strengths__text {
+  color: var(--secondary-text-color);
+  font-size: var(--main-font-size);
+  line-height: 1.71;
+  letter-spacing: var(--main-letter-spacing);
+}
+
+.strengths__icon {
+  height: 120px;
+  background-color: var(--secondary-background-color);
+  border-radius: var(--main-border-radius);
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}

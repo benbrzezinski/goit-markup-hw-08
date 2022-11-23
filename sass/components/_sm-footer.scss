@@ -1,0 +1,29 @@
+@use "../utils" as *;
+
+.sm-footer-box {
+  padding-top: 11px;
+}
+
+.sm-footer-box__text {
+  color: var(--main-background-color);
+  font-weight: var(--main-font-weight);
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+  letter-spacing: var(--main-letter-spacing);
+  text-transform: var(--uppercase);
+  margin-bottom: 20px;
+}
+
+.sm-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sm-footer__link {
+  @include sm(rgba(255, 255, 255, 0.1));
+}
+
+.sm-footer__icon {
+  fill: var(--main-background-color);
+}

@@ -1,0 +1,20 @@
+.contacts-footer {
+  margin-top: 9px;
+
+  li:nth-child(1) {
+    margin-bottom: 9px;
+  }
+}
+
+.contacts-footer__link {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: var(--main-font-size);
+  line-height: 1.71;
+  letter-spacing: var(--main-letter-spacing);
+  transition: color var(--transition-duration) var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
+    color: var(--main-selection-color);
+  }
+}

@@ -1,0 +1,59 @@
+@use "../utils" as *;
+
+.checkbox {
+  display: none;
+
+  &:checked {
+    + .checkbox__label {
+      &::before {
+        background-color: var(--main-selection-color);
+        border: none;
+      }
+
+      & .checkbox__icon {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.checkbox__label {
+  @include label;
+  margin-bottom: 30px;
+
+  &::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--main-text-color);
+    border-radius: calc(var(--main-border-radius) - 2px);
+    pointer-events: auto;
+    cursor: var(--pointer);
+    transition: background-color 75ms ease-in, border 25ms linear;
+    margin-right: 8px;
+    margin-left: 15px;
+  }
+}
+
+.checkbox__icon {
+  fill: var(--main-background-color);
+  opacity: 0;
+  position: absolute;
+  top: 7px;
+  left: 18px;
+  cursor: var(--pointer);
+  transition: opacity 75ms ease-in;
+}
+
+.checkbox__text {
+  color: var(--secondary-text-color);
+  font-size: var(--main-font-size);
+  line-height: 1.71;
+  letter-spacing: var(--main-letter-spacing);
+}
+
+.checkbox__link {
+  color: var(--main-selection-color);
+  pointer-events: auto;
+  cursor: var(--pointer);
+}
