@@ -18,7 +18,7 @@
 .newsletter__input {
   color: var(--main-background-color);
   background-color: inherit;
-  width: 358px;
+  width: 95%;
   @include bordered(rgba(255, 255, 255, 0.3));
   border-radius: var(--main-border-radius);
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15));

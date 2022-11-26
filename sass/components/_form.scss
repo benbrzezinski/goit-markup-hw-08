@@ -8,6 +8,7 @@ $letterSpacingForm: 0.01em;
 .form__header {
   color: var(--main-text-color);
   font-size: 20px;
+  line-height: 1.5;
   letter-spacing: var(--main-letter-spacing);
   text-align: var(--text-center);
   margin-bottom: 12px;
@@ -67,8 +68,8 @@ $letterSpacingForm: 0.01em;
   &::placeholder {
     color: var(--secondary-text-color);
     opacity: 0.5;
-    font-size: 12px;
-    line-height: 1.17;
+    font-size: var(--main-font-size);
+    line-height: var(--main-line-height);
     letter-spacing: $letterSpacingForm;
   }
 }

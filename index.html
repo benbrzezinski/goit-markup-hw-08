@@ -21,10 +21,101 @@
     <header>
       <div class="container">
         <div class="header">
-          <a class="logo header__logo link" href="./index.html"
+          <a class="logo link" href="./index.html"
             >Web<span class="logo--color-change">Studio</span></a
           >
-          <nav>
+          <button
+            class="mobile-menu__toggle open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="mobile-menu__icon" width="40" height="40">
+              <use xlink:href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <button
+              class="mobile-menu__toggle mobile-menu__toggle--setup close-menu"
+              type="button"
+            >
+              <svg class="mobile-menu__icon" width="40" height="40">
+                <use xlink:href="./images/icons.svg#icon-mobile-menu"></use>
+              </svg>
+            </button>
+            <nav>
+              <ul class="mobile-nav">
+                <li class="mobile-nav__item">
+                  <a
+                    href="./index.html"
+                    class="mobile-nav__link mobile-nav__link--color link"
+                    >Agencja</a
+                  >
+                </li>
+                <li class="mobile-nav__item">
+                  <a href="./portfolio.html" class="mobile-nav__link link"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="mobile-nav__item">
+                  <a href="#" class="mobile-nav__link link">Kontakt</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="contacts-mobile">
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contacts-mobile__link contacts-mobile__link--different link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+48111111111" class="contacts-mobile__link link"
+                  >+48 111 111 111</a
+                >
+              </li>
+            </ul>
+            <ul class="sm-mobile-menu">
+              <li class="sm-mobile-menu__item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  class="sm-mobile-menu__link link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="sm-mobile-menu__item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  class="sm-mobile-menu__link link"
+                  >Twitter</a
+                >
+              </li>
+              <li class="sm-mobile-menu__item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  class="sm-mobile-menu__link link"
+                  >Facebook</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  class="sm-mobile-menu__link link"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- <nav>
             <ul class="nav">
               <li class="nav__item">
                 <a
@@ -64,7 +155,7 @@
                 +48 111 111 111</a
               >
             </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </header>
@@ -80,7 +171,7 @@
         </div>
       </div>
       <div class="container">
-        <ul class="strengths">
+        <ul class="strengths section">
           <li class="strengths__item">
             <div class="strengths__icon">
               <svg width="70" height="70">
@@ -140,7 +231,7 @@
         </ul>
       </div>
       <div class="container">
-        <section class="section">
+        <!-- <section class="section">
           <h2 class="section__header">Czym się zajmujemy</h2>
           <ul class="services">
             <li class="services__item">
@@ -179,7 +270,7 @@
               </div>
             </li>
           </ul>
-        </section>
+        </section> -->
       </div>
       <div class="team-box">
         <div class="container">
@@ -190,10 +281,14 @@
                 <figure>
                   <img
                     class="team__img"
-                    src="./images/proddesigner.jpg"
+                    src="./images/team/proddesigner-450.jpg"
+                    srcset="
+                      ./images/team/proddesigner-450.jpg   450w,
+                      ./images/team/proddesigner-900.jpg   900w,
+                      ./images/team/proddesigner-1350.jpg 1350w
+                    "
+                    sizes="(max-width: 360px) 318px, (min-width: 460px) 450px, (min-width: 423px) 413px, (min-width: 392px) 382px, (min-width: 361px) 351px"
                     alt="Mężczyzna w średniej długości brązowych włosach z okularami i brodą, ubrany w bordową koszulę uśmiecha się."
-                    width="270"
-                    height="260"
                   />
                   <figcaption>
                     <h3 class="team__name">John Doe</h3>
@@ -727,5 +822,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

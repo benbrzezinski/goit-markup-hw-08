@@ -6,10 +6,10 @@
 
 .contacts-header__link {
   color: var(--secondary-text-color);
-  font-weight: calc(var(--main-font-weight) - 200);
+  font-weight: var(--secondary-font-weight);
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
-  letter-spacing: calc(var(--main-letter-spacing) - 0.01em);
+  letter-spacing: var(--secondary-letter-spacing);
   transition: color var(--transition-duration) var(--cubic-bezier);
 
   &:hover,

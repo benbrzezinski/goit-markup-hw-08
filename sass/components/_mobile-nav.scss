@@ -1,0 +1,24 @@
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--main-gap) + 2px);
+  margin-bottom: 302px;
+}
+
+@media (orientation: landscape) and (max-height: 644px) {
+  .mobile-nav {
+    margin-bottom: 70px;
+  }
+}
+
+.mobile-nav__link {
+  color: var(--main-text-color);
+  font-weight: var(--secondary-font-weight);
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: var(--secondary-letter-spacing);
+
+  &--color {
+    color: var(--main-selection-color);
+  }
+}

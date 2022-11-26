@@ -1,0 +1,19 @@
+.contacts-mobile {
+  margin-bottom: 64px;
+}
+
+.contacts-mobile__link {
+  color: var(--secondary-text-color);
+  font-size: 24px;
+  font-weight: var(--secondary-font-weight);
+  line-height: 1.17;
+  letter-spacing: var(--secondary-letter-spacing);
+  display: inline-block;
+
+  &--different {
+    color: var(--main-selection-color);
+    font-size: 34px;
+    line-height: 1.18;
+    margin-bottom: 32px;
+  }
+}

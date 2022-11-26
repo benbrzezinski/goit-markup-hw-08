@@ -1,0 +1,28 @@
+.sm-mobile-menu {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.sm-mobile-menu__item {
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 1px;
+    height: 22px;
+    position: absolute;
+    top: -1px;
+    right: -10px;
+    background-color: var(--main-text-color);
+    opacity: 0.2;
+  }
+}
+
+.sm-mobile-menu__link {
+  color: var(--main-selection-color);
+  font-size: 18px;
+  font-weight: var(--secondary-font-weight);
+  line-height: 1.22;
+  letter-spacing: var(--secondary-letter-spacing);
+}

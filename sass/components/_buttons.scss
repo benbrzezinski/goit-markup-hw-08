@@ -9,7 +9,7 @@
 .buttons__item {
   color: var(--main-text-color);
   background-color: var(--secondary-background-color);
-  font-weight: calc(var(--main-font-weight) - 200);
+  font-weight: var(--secondary-font-weight);
   line-height: 1.63;
   letter-spacing: var(--main-letter-spacing);
   border-radius: var(--main-border-radius);

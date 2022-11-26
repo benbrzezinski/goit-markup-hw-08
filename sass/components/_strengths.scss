@@ -2,10 +2,11 @@
 
 .strengths {
   @include flex;
+  margin: 0;
 }
 
 .strengths__item {
-  width: 270px;
+  width: 100%;
 }
 
 .strengths__header {
@@ -13,6 +14,7 @@
   line-height: var(--main-line-height);
   letter-spacing: var(--main-letter-spacing);
   text-transform: var(--uppercase);
+  text-align: var(--text-center);
   margin-bottom: 10px;
 }
 
@@ -27,6 +29,7 @@
   height: 120px;
   background-color: var(--secondary-background-color);
   border-radius: var(--main-border-radius);
-  padding: 25px 100px;
+  text-align: var(--text-center);
+  padding-block: 25px;
   margin-bottom: 30px;
 }

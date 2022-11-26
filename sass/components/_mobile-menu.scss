@@ -1,0 +1,47 @@
+.mobile-menu {
+  background-color: var(--main-background-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  overflow: scroll;
+  padding: 48px 40px;
+  transform: translateX(100%);
+  transition: transform 0.7s var(--cubic-bezier);
+
+  &.is-open {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 1199px) {
+  .mobile-menu {
+    overflow: scroll;
+  }
+}
+
+.mobile-menu__toggle {
+  width: 40px;
+  height: 40px;
+  background-color: var(--main-background-color);
+  border: none;
+  padding: 0;
+
+  &--setup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+}
+
+.mobile-menu__icon {
+  fill: var(--secondary-icons-color);
+  transition: fill var(--transition-duration) var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
+    fill: var(--main-selection-color);
+  }
+}
