@@ -236,7 +236,7 @@
           <ul class="services">
             <li class="services__item">
               <img
-                src="./images/code.jpg"
+                src="./images/services-pics/code.jpg"
                 alt="Mężczyzna siedzi przy swoim biurku i tworzy kod na tablecie."
                 width="370"
                 height="294"
@@ -248,7 +248,7 @@
 
             <li class="services__item">
               <img
-                src="./images/designing.jpg"
+                src="./images/services-pics/designing.jpg"
                 alt="Designer projektuje układ widżetów na telefon."
                 width="370"
                 height="294"
@@ -260,7 +260,7 @@
 
             <li class="services__item">
               <img
-                src="./images/graphic.jpg"
+                src="./images/services-pics/graphic.jpg"
                 alt="Grafik trzyma tablet z wyświetloną paletą kolorów."
                 width="370"
                 height="294"
@@ -350,10 +350,14 @@
                 <figure>
                   <img
                     class="team__img"
-                    src="./images/frontend.jpg"
+                    src="./images/frontend-450.jpg"
+                    srcset="
+                      ./images/team/frontend-450.jpg   450w,
+                      ./images/team/frontend-900.jpg   900w,
+                      ./images/team/frontend-1350.jpg 1350w
+                    "
+                    sizes="(max-width: 360px) 318px, (min-width: 460px) 450px, (min-width: 423px) 413px, (min-width: 392px) 382px, (min-width: 361px) 351px"
                     alt="Kobieta w długich jasnych włosach z okularami, ubrana w czarną marynarkę uśmiecha się."
-                    width="270"
-                    height="260"
                   />
                   <figcaption>
                     <h3 class="team__name">John Doe</h3>
@@ -415,10 +419,14 @@
                 <figure>
                   <img
                     class="team__img"
-                    src="./images/marketing.jpg"
+                    src="./images/marketing-450.jpg"
+                    srcset="
+                      ./images/team/marketing-450.jpg   450w,
+                      ./images/team/marketing-900.jpg   900w,
+                      ./images/team/marketing-1350.jpg 1350w
+                    "
+                    sizes="(max-width: 360px) 318px, (min-width: 460px) 450px, (min-width: 423px) 413px, (min-width: 392px) 382px, (min-width: 361px) 351px"
                     alt="Mężczyzna w średniej długości brązowych włosach z przystrzyżoną brodą i ubray w jasnoniebieską koszulę uśmiecha się."
-                    width="270"
-                    height="260"
                   />
                   <figcaption>
                     <h3 class="team__name">John Doe</h3>
@@ -480,10 +488,14 @@
                 <figure>
                   <img
                     class="team__img"
-                    src="./images/uidesigner.jpg"
+                    src="./images/uidesigner-450.jpg"
+                    srcset="
+                      ./images/team/uidesigner-450.jpg   450w,
+                      ./images/team/uidesigner-900.jpg   900w,
+                      ./images/team/uidesigner-1350.jpg 1350w
+                    "
+                    sizes="(max-width: 360px) 318px, (min-width: 460px) 450px, (min-width: 423px) 413px, (min-width: 392px) 382px, (min-width: 361px) 351px"
                     alt="Mężczyzna w średniej długości ciemno brązowych włosach z okularami i brodą, ubrany w czarny t-shirt lekko się uśmiecha."
-                    width="270"
-                    height="260"
                   />
                   <figcaption>
                     <h3 class="team__name">John Doe</h3>
@@ -723,12 +735,15 @@
                 required
               />
             </label>
-            <button class="newsletter__btn" type="submit">
-              Zapisz się
-              <svg class="newsletter__icon-send" width="24" height="24">
-                <use xlink:href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
+            <div class="newsletter__box">
+              <button class="newsletter__btn" type="submit">
+                Zapisz się
+                <svg class="newsletter__icon-send" width="24" height="24">
+                  <use xlink:href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+            services/
           </form>
         </div>
       </div>

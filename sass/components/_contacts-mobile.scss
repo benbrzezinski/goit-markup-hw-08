@@ -17,3 +17,9 @@
     margin-bottom: 32px;
   }
 }
+
+@media (max-width: 360px) {
+  .contacts-mobile__link--different {
+    font-size: 28px;
+  }
+}

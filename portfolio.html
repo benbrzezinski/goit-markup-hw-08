@@ -163,15 +163,19 @@
       <div class="container">
         <ul class="buttons">
           <li>
-            <button class="buttons__item" type="button">Wszystkie</button>
+            <button class="buttons__item btn-1" type="button">Wszystkie</button>
           </li>
-          <li><button class="buttons__item" type="button">Strony</button></li>
           <li>
-            <button class="buttons__item" type="button">Aplikacje</button>
+            <button class="buttons__item btn-2" type="button">Strony</button>
           </li>
-          <li><button class="buttons__item" type="button">Design</button></li>
           <li>
-            <button class="buttons__item" type="button">Marketing</button>
+            <button class="buttons__item btn-3" type="button">Aplikacje</button>
+          </li>
+          <li>
+            <button class="buttons__item btn-4" type="button">Design</button>
+          </li>
+          <li>
+            <button class="buttons__item btn-5" type="button">Marketing</button>
           </li>
         </ul>
         <ul class="project">
@@ -179,10 +183,14 @@
             <figure>
               <div class="project__box">
                 <img
-                  src="./images/laptopweb.jpg"
+                  src="./images/projects-pics/laptopweb-450.jpg"
+                  srcset="
+                    ./images/projects-pics/laptopweb-450.jpg   450w,
+                    ./images/projects-pics/laptopweb-900.jpg   900w,
+                    ./images/projects-pics/laptopweb-1350.jpg 1350w
+                  "
+                  sizes="(max-width: 360px) 318px, (min-width: 460px) 450px, (min-width: 423px) 413px, (min-width: 392px) 382px, (min-width: 361px) 351px"
                   alt="Laptop z wyświetloną stroną internetową."
-                  width="370"
-                  height="294"
                 />
                 <div class="project__overlay">
                   <p class="project__overlay-text">
@@ -512,12 +520,14 @@
                 required
               />
             </label>
-            <button class="newsletter__btn" type="submit">
-              Zapisz się
-              <svg class="newsletter__icon-send" width="24" height="24">
-                <use xlink:href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
+            <div class="newsletter__box">
+              <button class="newsletter__btn" type="submit">
+                Zapisz się
+                <svg class="newsletter__icon-send" width="24" height="24">
+                  <use xlink:href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>

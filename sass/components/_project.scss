@@ -3,7 +3,8 @@ $fontSizeProject: 18px;
 
 .project {
   @include flex;
-  margin-bottom: 94px;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 .project__item {
@@ -22,8 +23,6 @@ $fontSizeProject: 18px;
 }
 
 .project__box {
-  width: 370px;
-  height: 294px;
   position: relative;
   overflow: hidden;
 }
@@ -37,15 +36,21 @@ $fontSizeProject: 18px;
   top: 0;
   background-color: var(--main-selection-color);
   opacity: 0.9;
-  padding: 0 45px 0 24px;
+  padding-inline: 24px;
   transform: translateY(101%);
   transition: transform var(--transition-duration) var(--cubic-bezier);
 
   &-text {
     color: var(--main-background-color);
     font-size: $fontSizeProject;
-    line-height: 1.55;
+    line-height: 1.56;
     letter-spacing: var(--main-letter-spacing);
+  }
+}
+
+@media (max-width: 360px) {
+  .project__overlay {
+    padding-inline: 14px;
   }
 }
 

@@ -19,10 +19,26 @@
   }
 }
 
+@media (max-width: 385px) {
+  .sm-mobile-menu {
+    gap: 12px;
+  }
+
+  .sm-mobile-menu__item::after {
+    right: -6px;
+  }
+}
+
 .sm-mobile-menu__link {
   color: var(--main-selection-color);
   font-size: 18px;
   font-weight: var(--secondary-font-weight);
   line-height: 1.22;
   letter-spacing: var(--secondary-letter-spacing);
+}
+
+@media (max-width: 360px) {
+  .sm-mobile-menu__link {
+    font-size: 15px;
+  }
 }

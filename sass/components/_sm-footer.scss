@@ -1,14 +1,15 @@
 @use "../utils" as *;
 
-.sm-footer-box {
-  padding-top: 11px;
-}
+// .sm-footer-box {
+//   padding-top: 11px;
+// }
 
 .sm-footer-box__text {
   color: var(--main-background-color);
   font-weight: var(--main-font-weight);
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
+  text-align: var(--text-center);
   letter-spacing: var(--main-letter-spacing);
   text-transform: var(--uppercase);
   margin-bottom: 20px;
@@ -16,8 +17,10 @@
 
 .sm-footer {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
+  margin-bottom: 60px;
 }
 
 .sm-footer__link {

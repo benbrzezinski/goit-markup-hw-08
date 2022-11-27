@@ -5,9 +5,21 @@
   margin-bottom: 302px;
 }
 
+@media (max-height: 635px) {
+  .mobile-nav {
+    margin-bottom: 120px;
+  }
+}
+
 @media (orientation: landscape) and (max-height: 644px) {
   .mobile-nav {
     margin-bottom: 70px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 350px) {
+  .mobile-nav {
+    margin-bottom: 40px;
   }
 }
 
