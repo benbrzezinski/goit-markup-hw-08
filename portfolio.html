@@ -46,14 +46,14 @@
             <nav>
               <ul class="mobile-nav">
                 <li class="mobile-nav__item">
-                  <a href="./index.html" class="mobile-nav__link link"
+                  <a
+                    href="./index.html"
+                    class="mobile-nav__link mobile-nav__link--color link"
                     >Agencja</a
                   >
                 </li>
                 <li class="mobile-nav__item">
-                  <a
-                    href="./portfolio.html"
-                    class="mobile-nav__link mobile-nav__link--color link"
+                  <a href="./portfolio.html" class="mobile-nav__link link"
                     >Portfolio</a
                   >
                 </li>
@@ -115,24 +115,24 @@
               </li>
             </ul>
           </div>
-          <!-- <nav>
+          <nav class="d-none-nav-contacts">
             <ul class="nav">
               <li class="nav__item">
-                <a class="nav__link link" href="./index.html">Agencja</a>
+                <a
+                  class="nav__link nav__link--underline link"
+                  href="./index.html"
+                  >Agencja</a
+                >
               </li>
               <li class="nav__item">
-                <a
-                  class="nav__link nav__link--underscore link"
-                  href="./portfolio.html"
-                  >Portfolio</a
-                >
+                <a class="nav__link link" href="./portfolio.html">Portfolio</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link link" href="#">Kontakt</a>
               </li>
             </ul>
           </nav>
-          <ul class="contacts-header">
+          <ul class="contacts-header d-none-nav-contacts">
             <li>
               <a
                 class="contacts-header__link link"
@@ -143,7 +143,7 @@
                 info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="contacts-header__item">
               <a class="contacts-header__link link" href="tel:+48111111111"
                 ><svg
                   class="contacts-header__icon contacts-header__icon--setup"
@@ -155,7 +155,7 @@
                 +48 111 111 111</a
               >
             </li>
-          </ul> -->
+          </ul>
         </div>
       </div>
     </header>
@@ -183,11 +183,11 @@
             <figure>
               <div class="project__box">
                 <img
-                  src="./images/projects-pics/laptopweb-450.jpg"
+                  src="./images/projects-pics-mobile/laptopweb-450.jpg"
                   srcset="
-                    ./images/projects-pics/laptopweb-450.jpg   450w,
-                    ./images/projects-pics/laptopweb-900.jpg   900w,
-                    ./images/projects-pics/laptopweb-1350.jpg 1350w
+                    ./images/projects-pics-mobile/laptopweb-450.jpg   450w,
+                    ./images/projects-pics-mobile/laptopweb-900.jpg   900w,
+                    ./images/projects-pics-mobile/laptopweb-1350.jpg 1350w
                   "
                   sizes="(max-width: 360px) 318px, (min-width: 460px) 450px, (min-width: 423px) 413px, (min-width: 392px) 382px, (min-width: 361px) 351px"
                   alt="Laptop z wyświetloną stroną internetową."
@@ -213,10 +213,14 @@
             <figure>
               <div class="project__box">
                 <img
-                  src="./images/basketball.jpg"
+                  src="./images/projects-pics-mobile/basketball-450.jpg"
+                  srcset="
+                    ./images/projects-pics-mobile/basketball-450.jpg   450w,
+                    ./images/projects-pics-mobile/basketball-900.jpg   900w,
+                    ./images/projects-pics-mobile/basketball-1350.jpg 1350w
+                  "
+                  sizes="(max-width: 360px) 318px, (min-width: 460px) 450px, (min-width: 423px) 413px, (min-width: 392px) 382px, (min-width: 361px) 351px"
                   alt="Dwóch koszykarzy walczy o piłkę."
-                  width="370"
-                  height="294"
                 />
                 <div class="project__overlay">
                   <p class="project__overlay-text">
@@ -241,10 +245,14 @@
             <figure>
               <div class="project__box">
                 <img
-                  src="./images/seafood.jpg"
+                  src="./images/projects-pics-mobile/seafood-450.jpg"
+                  srcset="
+                    ./images/projects-pics-mobile/seafood-450.jpg   450w,
+                    ./images/projects-pics-mobile/seafood-900.jpg   900w,
+                    ./images/projects-pics-mobile/seafood-1350.jpg 1350w
+                  "
+                  sizes="(max-width: 360px) 318px, (min-width: 460px) 450px, (min-width: 423px) 413px, (min-width: 392px) 382px, (min-width: 361px) 351px"
                   alt="Nazwa restauracji z rybą w tle."
-                  width="370"
-                  height="294"
                 />
                 <div class="project__overlay">
                   <p class="project__overlay-text">
@@ -267,10 +275,14 @@
             <figure>
               <div class="project__box">
                 <img
-                  src="./images/headphones.jpg"
+                  src="./images/projects-pics-mobile/headphones-450.jpg"
+                  srcset="
+                    ./images/projects-pics-mobile/headphones-450.jpg   450w,
+                    ./images/projects-pics-mobile/headphones-900.jpg   900w,
+                    ./images/projects-pics-mobile/headphones-1350.jpg 1350w
+                  "
+                  sizes="(max-width: 360px) 318px, (min-width: 460px) 450px, (min-width: 423px) 413px, (min-width: 392px) 382px, (min-width: 361px) 351px"
                   alt="Czarne słuchawki nauszne bezprzewodowe."
-                  width="370"
-                  height="294"
                 />
                 <div class="project__overlay">
                   <p class="project__overlay-text">
@@ -293,10 +305,14 @@
             <figure>
               <div class="project__box">
                 <img
-                  src="./images/projectboxes.jpg"
+                  src="./images/projects-pics-mobile/projectboxes-450.jpg"
+                  srcset="
+                    ./images/projects-pics-mobile/projectboxes-450.jpg   450w,
+                    ./images/projects-pics-mobile/projectboxes-900.jpg   900w,
+                    ./images/projects-pics-mobile/projectboxes-1350.jpg 1350w
+                  "
+                  sizes="(max-width: 360px) 318px, (min-width: 460px) 450px, (min-width: 423px) 413px, (min-width: 392px) 382px, (min-width: 361px) 351px"
                   alt="Dwa pudełka jedno białe drugie jasnobrązowe."
-                  width="370"
-                  height="294"
                 />
                 <div class="project__overlay">
                   <p class="project__overlay-text">
@@ -319,10 +335,14 @@
             <figure>
               <div class="project__box">
                 <img
-                  src="./images/monitor.jpg"
+                  src="./images/projects-pics-mobile/website-450.jpg"
+                  srcset="
+                    ./images/projects-pics-mobile/website-450.jpg   450w,
+                    ./images/projects-pics-mobile/website-900.jpg   900w,
+                    ./images/projects-pics-mobile/website-1350.jpg 1350w
+                  "
+                  sizes="(max-width: 360px) 318px, (min-width: 460px) 450px, (min-width: 423px) 413px, (min-width: 392px) 382px, (min-width: 361px) 351px"
                   alt="Monitor z wyświetloną stroną internetową."
-                  width="370"
-                  height="294"
                 />
                 <div class="project__overlay">
                   <p class="project__overlay-text">
@@ -345,10 +365,14 @@
             <figure>
               <div class="project__box">
                 <img
-                  src="./images/magazine.jpg"
+                  src="./images/projects-pics-mobile/magazine-450.jpg"
+                  srcset="
+                    ./images/projects-pics-mobile/magazine-450.jpg   450w,
+                    ./images/projects-pics-mobile/magazine-900.jpg   900w,
+                    ./images/projects-pics-mobile/magazine-1350.jpg 1350w
+                  "
+                  sizes="(max-width: 360px) 318px, (min-width: 460px) 450px, (min-width: 423px) 413px, (min-width: 392px) 382px, (min-width: 361px) 351px"
                   alt="Otwarty magazyn."
-                  width="370"
-                  height="294"
                 />
                 <div class="project__overlay">
                   <p class="project__overlay-text">
@@ -371,10 +395,14 @@
             <figure>
               <div class="project__box">
                 <img
-                  src="./images/projectlab.jpg"
+                  src="./images/projects-pics-mobile/projectlab-450.jpg"
+                  srcset="
+                    ./images/projects-pics-mobile/projectlab-450.jpg   450w,
+                    ./images/projects-pics-mobile/projectlab-900.jpg   900w,
+                    ./images/projects-pics-mobile/projectlab-1350.jpg 1350w
+                  "
+                  sizes="(max-width: 360px) 318px, (min-width: 460px) 450px, (min-width: 423px) 413px, (min-width: 392px) 382px, (min-width: 361px) 351px"
                   alt="Biała karteczka z napisem LAB EL TAG zawieszona na sznurku."
-                  width="370"
-                  height="294"
                 />
                 <div class="project__overlay">
                   <p class="project__overlay-text">
@@ -397,10 +425,14 @@
             <figure>
               <div class="project__box">
                 <img
-                  src="./images/laptopapp.jpg"
+                  src="./images/projects-pics-mobile/laptopapp-450.jpg"
+                  srcset="
+                    ./images/projects-pics-mobile/laptopapp-450.jpg   450w,
+                    ./images/projects-pics-mobile/laptopapp-900.jpg   900w,
+                    ./images/projects-pics-mobile/laptopapp-1350.jpg 1350w
+                  "
+                  sizes="(max-width: 360px) 318px, (min-width: 460px) 450px, (min-width: 423px) 413px, (min-width: 392px) 382px, (min-width: 361px) 351px"
                   alt="Mężczyzna korzysta z programu na laptopie. Z lewej i prawej strony widać jego rzeczy."
-                  width="370"
-                  height="294"
                 />
                 <div class="project__overlay">
                   <p class="project__overlay-text">

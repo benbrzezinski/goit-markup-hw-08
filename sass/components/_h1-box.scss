@@ -9,8 +9,12 @@ h1 {
   letter-spacing: calc(var(--main-letter-spacing) * 2);
   text-align: var(--text-center);
   text-transform: var(--uppercase);
-  margin-inline: 20px;
+  padding-inline: 20px;
   margin-bottom: 30px;
+
+  @include rwd(var(--tablet)) {
+    padding-inline: 157px;
+  }
 }
 
 .h1-box {
@@ -20,22 +24,29 @@ h1 {
   background-position: center;
   background-color: #2f303a;
   padding-block: 118px;
-}
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .h1-box {
+  @include retina(2, 192) {
     background-image: url("../images/bg-h1/img-h1-mobile@2x.jpg"),
       linear-gradient(90deg, $rgbaH1Box, $rgbaH1Box);
   }
-}
 
-@media (min-device-pixel-ratio: 3),
-  (min-resolution: 288dpi),
-  (min-resolution: 3dppx) {
-  .h1-box {
+  @include retina(3, 288) {
     background-image: url("../images/bg-h1/img-h1-mobile@3x.jpg"),
+      linear-gradient(90deg, $rgbaH1Box, $rgbaH1Box);
+  }
+
+  @include rwd(var(--tablet)) {
+    background-image: url("../images/bg-h1/img-h1-tablet.jpg"),
+      linear-gradient(90deg, $rgbaH1Box, $rgbaH1Box);
+  }
+
+  @include retina(2, 192) {
+    background-image: url("../images/bg-h1/img-h1-tablet@2x.jpg"),
+      linear-gradient(90deg, $rgbaH1Box, $rgbaH1Box);
+  }
+
+  @include retina(3, 288) {
+    background-image: url("../images/bg-h1/img-h1-tablet@3x.jpg"),
       linear-gradient(90deg, $rgbaH1Box, $rgbaH1Box);
   }
 }

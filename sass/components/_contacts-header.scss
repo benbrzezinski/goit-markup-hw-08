@@ -1,14 +1,27 @@
+@use "../utils" as *;
+
 .contacts-header {
   display: flex;
   align-items: flex-end;
   gap: var(--main-gap);
+
+  @include rwd(var(--tablet)) {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.contacts-header__item {
+  @include rwd(var(--tablet)) {
+    padding-right: 27px;
+  }
 }
 
 .contacts-header__link {
   color: var(--secondary-text-color);
   font-weight: var(--secondary-font-weight);
-  font-size: var(--main-font-size);
-  line-height: var(--main-line-height);
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: var(--secondary-letter-spacing);
   transition: color var(--transition-duration) var(--cubic-bezier);
 

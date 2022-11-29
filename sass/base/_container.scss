@@ -1,11 +1,11 @@
+@use "../utils" as *;
+
 .container {
   max-width: var(--mobile);
   margin: 0 auto;
   padding: 0 15px;
-}
 
-// .container {
-//   max-width: 1200px;
-//   margin: 0 auto;
-//   padding: 0;
-// }
+  @include rwd(var(--tablet)) {
+    max-width: var(--tablet);
+  }
+}

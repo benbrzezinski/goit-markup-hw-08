@@ -1,6 +1,12 @@
+@use "../utils" as *;
+
 .nav {
   display: flex;
   gap: 46px;
+
+  @include rwd(var(--tablet)) {
+    gap: 60px;
+  }
 }
 
 .nav__item {

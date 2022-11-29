@@ -115,7 +115,7 @@
               </li>
             </ul>
           </div>
-          <!-- <nav>
+          <nav class="d-none-nav-contacts">
             <ul class="nav">
               <li class="nav__item">
                 <a
@@ -132,7 +132,7 @@
               </li>
             </ul>
           </nav>
-          <ul class="contacts-header">
+          <ul class="contacts-header d-none-nav-contacts">
             <li>
               <a
                 class="contacts-header__link link"
@@ -143,7 +143,7 @@
                 info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="contacts-header__item">
               <a class="contacts-header__link link" href="tel:+48111111111"
                 ><svg
                   class="contacts-header__icon contacts-header__icon--setup"
@@ -155,7 +155,7 @@
                 +48 111 111 111</a
               >
             </li>
-          </ul> -->
+          </ul>
         </div>
       </div>
     </header>
@@ -230,47 +230,49 @@
           </li>
         </ul>
       </div>
-      <div class="container">
-        <!-- <section class="section">
-          <h2 class="section__header">Czym się zajmujemy</h2>
-          <ul class="services">
-            <li class="services__item">
-              <img
-                src="./images/services-pics/code.jpg"
-                alt="Mężczyzna siedzi przy swoim biurku i tworzy kod na tablecie."
-                width="370"
-                height="294"
-              />
-              <div class="services__box">
-                <p class="services__text">Aplikacje komputerowe</p>
-              </div>
-            </li>
+      <div class="d-none">
+        <div class="container">
+          <section class="section">
+            <h2 class="section__header">Czym się zajmujemy</h2>
+            <ul class="services">
+              <li class="services__item">
+                <img
+                  src="./images/services-pics/code.jpg"
+                  alt="Mężczyzna siedzi przy swoim biurku i tworzy kod na tablecie."
+                  width="370"
+                  height="294"
+                />
+                <div class="services__box">
+                  <p class="services__text">Aplikacje komputerowe</p>
+                </div>
+              </li>
 
-            <li class="services__item">
-              <img
-                src="./images/services-pics/designing.jpg"
-                alt="Designer projektuje układ widżetów na telefon."
-                width="370"
-                height="294"
-              />
-              <div class="services__box">
-                <p class="services__text">Aplikacje mobilne</p>
-              </div>
-            </li>
+              <li class="services__item">
+                <img
+                  src="./images/services-pics/designing.jpg"
+                  alt="Designer projektuje układ widżetów na telefon."
+                  width="370"
+                  height="294"
+                />
+                <div class="services__box">
+                  <p class="services__text">Aplikacje mobilne</p>
+                </div>
+              </li>
 
-            <li class="services__item">
-              <img
-                src="./images/services-pics/graphic.jpg"
-                alt="Grafik trzyma tablet z wyświetloną paletą kolorów."
-                width="370"
-                height="294"
-              />
-              <div class="services__box">
-                <p class="services__text">Rozwiązania graficzne</p>
-              </div>
-            </li>
-          </ul>
-        </section> -->
+              <li class="services__item">
+                <img
+                  src="./images/services-pics/graphic.jpg"
+                  alt="Grafik trzyma tablet z wyświetloną paletą kolorów."
+                  width="370"
+                  height="294"
+                />
+                <div class="services__box">
+                  <p class="services__text">Rozwiązania graficzne</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
       </div>
       <div class="team-box">
         <div class="container">
@@ -279,17 +281,31 @@
             <ul class="team">
               <li class="team__item">
                 <figure>
-                  <img
-                    class="team__img"
-                    src="./images/team/proddesigner-450.jpg"
-                    srcset="
-                      ./images/team/proddesigner-450.jpg   450w,
-                      ./images/team/proddesigner-900.jpg   900w,
-                      ./images/team/proddesigner-1350.jpg 1350w
-                    "
-                    sizes="(max-width: 360px) 318px, (min-width: 460px) 450px, (min-width: 423px) 413px, (min-width: 392px) 382px, (min-width: 361px) 351px"
-                    alt="Mężczyzna w średniej długości brązowych włosach z okularami i brodą, ubrany w bordową koszulę uśmiecha się."
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/team-mobile/proddesigner-450.jpg   450w,
+                        ./images/team-mobile/proddesigner-900.jpg   900w,
+                        ./images/team-mobile/proddesigner-1350.jpg 1350w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(max-width: 360px) 318px, (min-width: 460px) 450px, (min-width: 423px) 413px, (min-width: 392px) 382px, (min-width: 361px) 351px"
+                    />
+                    <source
+                      srcset="
+                        ./images/team-tablet/proddesigner-354.jpg   354w,
+                        ./images/team-tablet/proddesigner-708.jpg   708w,
+                        ./images/team-tablet/proddesigner-1062.jpg 1062w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <img
+                      class="team__img"
+                      src="./images/team-mobile/proddesigner-450.jpg"
+                      alt="Mężczyzna w średniej długości brązowych włosach z okularami i brodą, ubrany w bordową koszulę uśmiecha się."
+                    />
+                  </picture>
                   <figcaption>
                     <h3 class="team__name">John Doe</h3>
                     <p class="team__text">Product Designer</p>
@@ -350,11 +366,11 @@
                 <figure>
                   <img
                     class="team__img"
-                    src="./images/frontend-450.jpg"
+                    src="./images/team-mobile/frontend-450.jpg"
                     srcset="
-                      ./images/team/frontend-450.jpg   450w,
-                      ./images/team/frontend-900.jpg   900w,
-                      ./images/team/frontend-1350.jpg 1350w
+                      ./images/team-mobile/frontend-450.jpg   450w,
+                      ./images/team-mobile/frontend-900.jpg   900w,
+                      ./images/team-mobile/frontend-1350.jpg 1350w
                     "
                     sizes="(max-width: 360px) 318px, (min-width: 460px) 450px, (min-width: 423px) 413px, (min-width: 392px) 382px, (min-width: 361px) 351px"
                     alt="Kobieta w długich jasnych włosach z okularami, ubrana w czarną marynarkę uśmiecha się."
@@ -419,11 +435,11 @@
                 <figure>
                   <img
                     class="team__img"
-                    src="./images/marketing-450.jpg"
+                    src="./images/team-mobile/marketing-450.jpg"
                     srcset="
-                      ./images/team/marketing-450.jpg   450w,
-                      ./images/team/marketing-900.jpg   900w,
-                      ./images/team/marketing-1350.jpg 1350w
+                      ./images/team-mobile/marketing-450.jpg   450w,
+                      ./images/team-mobile/marketing-900.jpg   900w,
+                      ./images/team-mobile/marketing-1350.jpg 1350w
                     "
                     sizes="(max-width: 360px) 318px, (min-width: 460px) 450px, (min-width: 423px) 413px, (min-width: 392px) 382px, (min-width: 361px) 351px"
                     alt="Mężczyzna w średniej długości brązowych włosach z przystrzyżoną brodą i ubray w jasnoniebieską koszulę uśmiecha się."
@@ -488,11 +504,11 @@
                 <figure>
                   <img
                     class="team__img"
-                    src="./images/uidesigner-450.jpg"
+                    src="./images/team-mobile/uidesigner-450.jpg"
                     srcset="
-                      ./images/team/uidesigner-450.jpg   450w,
-                      ./images/team/uidesigner-900.jpg   900w,
-                      ./images/team/uidesigner-1350.jpg 1350w
+                      ./images/team-mobile/uidesigner-450.jpg   450w,
+                      ./images/team-mobile/uidesigner-900.jpg   900w,
+                      ./images/team-mobile/uidesigner-1350.jpg 1350w
                     "
                     sizes="(max-width: 360px) 318px, (min-width: 460px) 450px, (min-width: 423px) 413px, (min-width: 392px) 382px, (min-width: 361px) 351px"
                     alt="Mężczyzna w średniej długości ciemno brązowych włosach z okularami i brodą, ubrany w czarny t-shirt lekko się uśmiecha."

@@ -31,6 +31,10 @@
     cursor: var(--pointer);
     transition: background-color 75ms ease-in, border 25ms linear;
     margin-right: 8px;
+
+    @include max-value(470px) {
+      margin-bottom: 8px;
+    }
   }
 }
 
@@ -42,15 +46,9 @@
   left: 3px;
   cursor: var(--pointer);
   transition: opacity 75ms ease-in;
-}
 
-@media (max-width: 470px) {
-  .checkbox__icon {
+  @include max-value(470px) {
     top: 3px;
-  }
-
-  .checkbox__label::before {
-    margin-bottom: 8px;
   }
 }
 

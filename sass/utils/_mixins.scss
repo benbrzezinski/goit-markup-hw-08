@@ -1,3 +1,37 @@
+@mixin rwd($breakpoint) {
+  @if $breakpoint == var(--tablet) {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == var(--desktop) {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+@mixin min-value($bp) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}
+
+@mixin max-value($bp) {
+  @media (max-width: $bp) {
+    @content;
+  }
+}
+
+@mixin retina($value, $dpi) {
+  @media (min-device-pixel-ratio: $value),
+  (min-resolution: #{$dpi}dpi),
+  (min-resolution: #{$value}dppx) {
+    @content;
+  }
+}
+
 @mixin btn {
   background-color: var(--main-selection-color);
   color: var(--main-background-color);
@@ -19,7 +53,6 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: var(--main-gap);
-  margin-top: 30px;
 }
 
 @mixin sm($backgroundColor) {

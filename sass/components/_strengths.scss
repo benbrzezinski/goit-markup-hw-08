@@ -2,11 +2,14 @@
 
 .strengths {
   @include flex;
-  margin: 0;
 }
 
 .strengths__item {
   width: 100%;
+
+  @include rwd(var(--tablet)) {
+    width: 354px;
+  }
 }
 
 .strengths__header {
@@ -16,6 +19,10 @@
   text-transform: var(--uppercase);
   text-align: var(--text-center);
   margin-bottom: 10px;
+
+  @include rwd(var(--tablet)) {
+    text-align: start;
+  }
 }
 
 .strengths__text {

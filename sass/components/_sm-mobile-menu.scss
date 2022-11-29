@@ -1,7 +1,13 @@
+@use "../utils" as *;
+
 .sm-mobile-menu {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+
+  @include max-value(385px) {
+    gap: 12px;
+  }
 }
 
 .sm-mobile-menu__item {
@@ -16,16 +22,10 @@
     right: -10px;
     background-color: var(--main-text-color);
     opacity: 0.2;
-  }
-}
 
-@media (max-width: 385px) {
-  .sm-mobile-menu {
-    gap: 12px;
-  }
-
-  .sm-mobile-menu__item::after {
-    right: -6px;
+    @include max-value(385px) {
+      right: -6px;
+    }
   }
 }
 
@@ -35,10 +35,8 @@
   font-weight: var(--secondary-font-weight);
   line-height: 1.22;
   letter-spacing: var(--secondary-letter-spacing);
-}
 
-@media (max-width: 360px) {
-  .sm-mobile-menu__link {
+  @include max-value(360px) {
     font-size: 15px;
   }
 }

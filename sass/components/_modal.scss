@@ -11,10 +11,8 @@
   max-width: 450px;
   height: 94%;
   max-height: 609px;
-}
 
-@media (max-width: 1199px) {
-  .modal {
+  @include max-value(1199px) {
     overflow: scroll;
   }
 }
@@ -43,6 +41,6 @@
 }
 
 .modal__icon {
-  fill: #000;
+  fill: var(--secondary-icons-color);
   transition: fill var(--transition-duration) var(--cubic-bezier);
 }

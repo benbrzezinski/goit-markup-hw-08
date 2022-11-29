@@ -1,5 +1,13 @@
+@use "../utils" as *;
+
 .section {
   padding: 60px 0;
+}
+
+.strengths.section {
+  @include rwd(var(--tablet)) {
+    padding-bottom: 45px;
+  }
 }
 
 .section__header {
@@ -7,4 +15,5 @@
   line-height: 1.18;
   letter-spacing: var(--main-letter-spacing);
   text-align: var(--text-center);
+  margin-bottom: 30px;
 }

@@ -1,3 +1,5 @@
+@use "../utils" as *;
+
 .contacts-mobile {
   margin-bottom: 64px;
 }
@@ -15,11 +17,9 @@
     font-size: 34px;
     line-height: 1.18;
     margin-bottom: 32px;
-  }
-}
 
-@media (max-width: 360px) {
-  .contacts-mobile__link--different {
-    font-size: 28px;
+    @include max-value(360px) {
+      font-size: 28px;
+    }
   }
 }
