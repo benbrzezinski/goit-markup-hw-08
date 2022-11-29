@@ -15,12 +15,6 @@
   border-radius: 0 0 var(--main-border-radius) var(--main-border-radius);
 }
 
-.team__box {
-  @include rwd(var(--tablet)) {
-    background-image: url("../images/team-tablet/proddesigner-tablet.jpg");
-  }
-}
-
 .team__img {
   margin-bottom: 30px;
 }
