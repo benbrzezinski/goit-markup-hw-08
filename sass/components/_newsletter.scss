@@ -4,9 +4,8 @@
 //   padding-top: 11px;
 // }
 
-.newsletter__text {
+.newsletter__header {
   color: var(--main-background-color);
-  font-weight: var(--main-font-weight);
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
   text-align: var(--text-center);
@@ -30,6 +29,10 @@
     color: rgba(255, 255, 255, 0.6);
     line-height: 1.25;
     letter-spacing: var(--main-letter-spacing);
+  }
+
+  @include rwd(var(--tablet)) {
+    width: 450px;
   }
 }
 

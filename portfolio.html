@@ -118,14 +118,14 @@
           <nav class="d-none-nav-contacts">
             <ul class="nav">
               <li class="nav__item">
-                <a
-                  class="nav__link nav__link--underline link"
-                  href="./index.html"
-                  >Agencja</a
-                >
+                <a class="nav__link link" href="./index.html">Agencja</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link link" href="./portfolio.html">Portfolio</a>
+                <a
+                  class="nav__link nav__link--underscore link"
+                  href="./portfolio.html"
+                  >Portfolio</a
+                >
               </li>
               <li class="nav__item">
                 <a class="nav__link link" href="#">Kontakt</a>
@@ -187,9 +187,15 @@
                   srcset="
                     ./images/projects-pics-mobile/laptopweb-450.jpg   450w,
                     ./images/projects-pics-mobile/laptopweb-900.jpg   900w,
-                    ./images/projects-pics-mobile/laptopweb-1350.jpg 1350w
+                    ./images/projects-pics-mobile/laptopweb-1350.jpg 1350w,
+                    ./images/projects-pics-tablet/laptopweb-354.jpg   354w,
+                    ./images/projects-pics-tablet/laptopweb-708.jpg   708w,
+                    ./images/projects-pics-tablet/laptopweb-1062.jpg 1062w
                   "
-                  sizes="(max-width: 360px) 318px, (min-width: 460px) 450px, (min-width: 423px) 413px, (min-width: 392px) 382px, (min-width: 361px) 351px"
+                  sizes="(max-width: 340px) 310px, (min-width: 1200px) 270px, (min-width: 768px) 354px,
+                           (min-width: 480px) 450px, (min-width: 456px) 436px, (min-width: 445px) 425px,
+                           (min-width: 424px) 404px, (min-width: 403px) 383px, (min-width: 382px) 362px,
+                           (min-width: 361px) 341px, (min-width: 341px) 321px"
                   alt="Laptop z wyświetloną stroną internetową."
                 />
                 <div class="project__overlay">
@@ -217,9 +223,15 @@
                   srcset="
                     ./images/projects-pics-mobile/basketball-450.jpg   450w,
                     ./images/projects-pics-mobile/basketball-900.jpg   900w,
-                    ./images/projects-pics-mobile/basketball-1350.jpg 1350w
+                    ./images/projects-pics-mobile/basketball-1350.jpg 1350w,
+                    ./images/projects-pics-tablet/basketball-354.jpg   354w,
+                    ./images/projects-pics-tablet/basketball-708.jpg   708w,
+                    ./images/projects-pics-tablet/basketball-1062.jpg 1062w
                   "
-                  sizes="(max-width: 360px) 318px, (min-width: 460px) 450px, (min-width: 423px) 413px, (min-width: 392px) 382px, (min-width: 361px) 351px"
+                  sizes="(max-width: 340px) 310px, (min-width: 1200px) 270px, (min-width: 768px) 354px,
+                           (min-width: 480px) 450px, (min-width: 456px) 436px, (min-width: 445px) 425px,
+                           (min-width: 424px) 404px, (min-width: 403px) 383px, (min-width: 382px) 362px,
+                           (min-width: 361px) 341px, (min-width: 341px) 321px"
                   alt="Dwóch koszykarzy walczy o piłkę."
                 />
                 <div class="project__overlay">
@@ -480,7 +492,7 @@
             </ul>
           </div>
           <div class="sm-footer-box">
-            <p class="sm-footer-box__text">Dołącz do nas</p>
+            <h4 class="sm-footer-box__header">Dołącz do nas</h4>
             <ul class="sm-footer">
               <li>
                 <a
@@ -542,7 +554,7 @@
             autocomplete="on"
             method="post"
           >
-            <p class="newsletter__text">Zapisz się do newslettera</p>
+            <h4 class="newsletter__header">Zapisz się do newslettera</h4>
             <label>
               <input
                 class="newsletter__input"

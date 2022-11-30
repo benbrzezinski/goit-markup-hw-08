@@ -4,9 +4,8 @@
 //   padding-top: 11px;
 // }
 
-.sm-footer-box__text {
+.sm-footer-box__header {
   color: var(--main-background-color);
-  font-weight: var(--main-font-weight);
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
   text-align: var(--text-center);
@@ -21,6 +20,10 @@
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 60px;
+
+  @include rwd(var(--tablet)) {
+    margin-bottom: 0;
+  }
 }
 
 .sm-footer__link {

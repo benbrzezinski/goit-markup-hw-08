@@ -22,6 +22,15 @@
       fill: var(--main-selection-color);
     }
   }
+
+  @include max-value(479px) {
+    width: 290px;
+    height: 110px;
+  }
+
+  @include rwd(var(--tablet)) {
+    width: 226px;
+  }
 }
 
 .customers__icon {

@@ -4,7 +4,6 @@ $fontSizeProject: 18px;
 .project {
   @include flex;
   padding-bottom: 60px;
-  margin-top: 40px;
 }
 
 .project__item {
@@ -48,14 +47,22 @@ $fontSizeProject: 18px;
   }
 
   @include max-value(360px) {
-    padding-inline: 14px;
+    padding-inline: 10px;
   }
 }
 
 .project__case {
   @include bordered(#eee);
   border-top: none;
-  padding: 20px 23px 19px 23px;
+  padding: 20px 0 19px 23px;
+
+  @include max-value(360px) {
+    padding-left: 16px;
+  }
+
+  @include rwd(var(--tablet)) {
+    padding-left: 19px;
+  }
 }
 
 .project__name {
@@ -63,6 +70,10 @@ $fontSizeProject: 18px;
   line-height: 2;
   letter-spacing: calc(var(--main-letter-spacing) * 2);
   margin-bottom: 4px;
+
+  @include max-value(381px) {
+    font-size: 16px;
+  }
 }
 
 .project__type {

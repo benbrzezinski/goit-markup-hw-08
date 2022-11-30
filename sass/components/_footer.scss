@@ -1,13 +1,17 @@
+@use "../utils" as *;
+
 footer {
   background-color: #2f303a;
   padding: 60px 0;
 }
 
-// .footer {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: space-between;
-// }
+.footer {
+  @include rwd(var(--tablet)) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 
 .footer__box {
   text-align: var(--text-center);
