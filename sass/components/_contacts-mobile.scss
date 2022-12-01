@@ -18,7 +18,7 @@
     line-height: 1.18;
     margin-bottom: 32px;
 
-    @include max-value(360px) {
+    @include max-width(360px) {
       font-size: 28px;
     }
   }

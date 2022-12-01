@@ -32,7 +32,7 @@
     transition: background-color 75ms ease-in, border 25ms linear;
     margin-right: 8px;
 
-    @include max-value(470px) {
+    @include max-width(485px) {
       margin-bottom: 8px;
     }
   }
@@ -47,7 +47,7 @@
   cursor: var(--pointer);
   transition: opacity 75ms ease-in;
 
-  @include max-value(470px) {
+  @include max-width(485px) {
     top: 3px;
   }
 }

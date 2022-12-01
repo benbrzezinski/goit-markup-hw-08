@@ -5,14 +5,14 @@
   align-items: flex-end;
   gap: var(--main-gap);
 
-  @include rwd(var(--tablet)) {
+  @include width-from-to(var(--tablet), 1199px) {
     flex-direction: column;
     gap: 10px;
   }
 }
 
 .contacts-header__item {
-  @include rwd(var(--tablet)) {
+  @include width-from-to(var(--tablet), 1199px) {
     padding-right: 27px;
   }
 }

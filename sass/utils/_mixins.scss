@@ -12,14 +12,20 @@
   }
 }
 
-@mixin min-value($bp) {
+@mixin min-width($bp) {
   @media (min-width: $bp) {
     @content;
   }
 }
 
-@mixin max-value($bp) {
+@mixin max-width($bp) {
   @media (max-width: $bp) {
+    @content;
+  }
+}
+
+@mixin width-from-to($minValue, $maxValue) {
+  @media (min-width: $minValue) and (max-width: $maxValue) {
     @content;
   }
 }

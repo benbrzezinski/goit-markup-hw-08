@@ -1,11 +1,17 @@
 @use "../utils" as *;
 
+.nav-wrapper {
+  @include rwd(var(--desktop)) {
+    flex-grow: 2;
+  }
+}
+
 .nav {
   display: flex;
   gap: 46px;
 
-  @include rwd(var(--tablet)) {
-    gap: 60px;
+  @include width-from-to(var(--tablet), 1199px) {
+    gap: calc(var(--main-gap) * 2);
   }
 }
 

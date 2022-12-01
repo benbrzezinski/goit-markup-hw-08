@@ -1,19 +1,19 @@
 @use "./mixins" as *;
 
 .d-none {
-  @include max-value(1199px) {
+  @include max-width(1199px) {
     display: none;
   }
 }
 
 .d-none-nav-contacts {
-  @include max-value(767px) {
+  @include max-width(767px) {
     display: none;
   }
 }
 
 ul.d-none-nav-contacts {
-  @include max-value(767px) {
+  @include max-width(767px) {
     display: none;
   }
 }

@@ -12,7 +12,7 @@
   height: 94%;
   max-height: 609px;
 
-  @include max-value(1199px) {
+  @include max-width(485px) {
     overflow: scroll;
   }
 }

@@ -8,4 +8,8 @@
   @include rwd(var(--tablet)) {
     max-width: var(--tablet);
   }
+
+  @include rwd(var(--desktop)) {
+    max-width: var(--desktop);
+  }
 }

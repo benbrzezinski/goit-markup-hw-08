@@ -15,6 +15,12 @@ h1 {
   @include rwd(var(--tablet)) {
     padding-inline: 157px;
   }
+
+  @include rwd(var(--desktop)) {
+    font-size: 44px;
+    line-height: 1.36;
+    padding-inline: 225px;
+  }
 }
 
 .h1-box {
@@ -47,6 +53,24 @@ h1 {
 
   @include retina(3, 288) {
     background-image: url("../images/bg-h1/img-h1-tablet@3x.jpg"),
+      linear-gradient(90deg, $rgbaH1Box, $rgbaH1Box);
+  }
+
+  @include rwd(var(--desktop)) {
+    background-image: url("../images/bg-h1/img-h1-desktop.jpg"),
+      linear-gradient(90deg, $rgbaH1Box, $rgbaH1Box);
+    background-size: 1600px;
+    background-repeat: no-repeat;
+    padding-block: 200px;
+  }
+
+  @include retina(2, 192) {
+    background-image: url("../images/bg-h1/img-h1-desktop@2x.jpg"),
+      linear-gradient(90deg, $rgbaH1Box, $rgbaH1Box);
+  }
+
+  @include retina(3, 288) {
+    background-image: url("../images/bg-h1/img-h1-desktop@3x.jpg"),
       linear-gradient(90deg, $rgbaH1Box, $rgbaH1Box);
   }
 }

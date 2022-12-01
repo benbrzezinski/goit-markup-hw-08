@@ -23,7 +23,7 @@
     }
   }
 
-  @include max-value(479px) {
+  @include max-width(479px) {
     width: 290px;
     height: 110px;
   }

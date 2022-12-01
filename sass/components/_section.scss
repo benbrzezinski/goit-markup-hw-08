@@ -2,11 +2,19 @@
 
 .section {
   padding: 60px 0;
+
+  @include rwd(var(--desktop)) {
+    padding-block: 94px;
+  }
 }
 
 .strengths.section {
   @include rwd(var(--tablet)) {
     padding-bottom: 45px;
+  }
+
+  @include rwd(var(--desktop)) {
+    padding-bottom: 0;
   }
 }
 
