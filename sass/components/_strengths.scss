@@ -10,6 +10,10 @@
   @include rwd(var(--tablet)) {
     width: 354px;
   }
+
+  @include rwd(var(--desktop)) {
+    width: 270px;
+  }
 }
 
 .strengths__header {

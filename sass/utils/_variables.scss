@@ -1,3 +1,5 @@
+$tablet: 768px;
+
 :root {
   --main-text-color: #212121;
   --secondary-text-color: #757575;
@@ -20,6 +22,6 @@
   --transition-duration: 250ms;
   --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
   --mobile: 480px;
-  --tablet: 768px;
+  --tablet: #{$tablet};
   --desktop: 1200px;
 }

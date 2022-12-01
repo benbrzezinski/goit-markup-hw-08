@@ -31,6 +31,10 @@
   @include rwd(var(--tablet)) {
     width: 226px;
   }
+
+  @include rwd(var(--desktop)) {
+    width: 170px;
+  }
 }
 
 .customers__icon {

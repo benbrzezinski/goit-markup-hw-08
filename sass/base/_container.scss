@@ -3,7 +3,6 @@
 .container {
   max-width: var(--mobile);
   margin: 0 auto;
-  padding: 0 15px;
 
   @include rwd(var(--tablet)) {
     max-width: var(--tablet);

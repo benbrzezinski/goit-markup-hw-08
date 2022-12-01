@@ -24,4 +24,10 @@
   letter-spacing: var(--main-letter-spacing);
   text-align: var(--text-center);
   margin-bottom: 30px;
+
+  @include rwd(var(--desktop)) {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
