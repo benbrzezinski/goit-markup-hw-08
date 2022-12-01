@@ -4,6 +4,10 @@ $fontSizeProject: 18px;
 .project {
   @include flex;
   padding-bottom: 60px;
+
+  @include rwd(var(--tablet)) {
+    justify-content: flex-start;
+  }
 }
 
 .project__item {
