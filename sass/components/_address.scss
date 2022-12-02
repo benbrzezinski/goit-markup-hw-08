@@ -1,3 +1,5 @@
+@use "../utils" as *;
+
 .address {
   color: var(--main-background-color);
   font-style: normal;
@@ -6,4 +8,8 @@
   letter-spacing: var(--main-letter-spacing);
   margin-top: 20px;
   margin-bottom: 8px;
+
+  @include rwd(var(--desktop)) {
+    margin-bottom: 9px;
+  }
 }

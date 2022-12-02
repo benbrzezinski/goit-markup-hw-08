@@ -12,6 +12,10 @@ $letterSpacingForm: 0.01em;
   letter-spacing: var(--main-letter-spacing);
   text-align: var(--text-center);
   margin-bottom: 12px;
+
+  @include rwd(var(--desktop)) {
+    line-height: 1.15;
+  }
 }
 
 .form__label {
@@ -71,6 +75,11 @@ $letterSpacingForm: 0.01em;
     font-size: var(--main-font-size);
     line-height: var(--main-line-height);
     letter-spacing: $letterSpacingForm;
+
+    @include rwd(var(--desktop)) {
+      font-size: 12px;
+      line-height: 1.17;
+    }
   }
 }
 

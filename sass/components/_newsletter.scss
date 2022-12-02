@@ -1,8 +1,10 @@
 @use "../utils" as *;
 
-// .newsletter {
-//   padding-top: 11px;
-// }
+.newsletter {
+  @include rwd(var(--desktop)) {
+    padding-top: 12px;
+  }
+}
 
 .newsletter__header {
   color: var(--main-background-color);
@@ -12,6 +14,10 @@
   letter-spacing: var(--main-letter-spacing);
   text-transform: var(--uppercase);
   margin-bottom: 20px;
+
+  @include rwd(var(--desktop)) {
+    text-align: initial;
+  }
 }
 
 .newsletter__input {
@@ -34,11 +40,21 @@
   @include rwd(var(--tablet)) {
     width: 450px;
   }
+
+  @include rwd(var(--desktop)) {
+    width: 358px;
+    margin-right: 8px;
+    margin-bottom: 0;
+  }
 }
 
 .newsletter__box {
   display: flex;
   justify-content: center;
+
+  @include rwd(var(--desktop)) {
+    display: inline-block;
+  }
 }
 
 .newsletter__btn {

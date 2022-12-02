@@ -1,8 +1,18 @@
+@use "../utils" as *;
+
 .contacts-footer {
   margin-bottom: 60px;
 
+  @include rwd(var(--desktop)) {
+    margin-bottom: 0;
+  }
+
   li:nth-child(1) {
     margin-bottom: 8px;
+
+    @include rwd(var(--desktop)) {
+      margin-bottom: 9px;
+    }
   }
 }
 

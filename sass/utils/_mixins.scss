@@ -12,12 +12,6 @@
   }
 }
 
-@mixin min-width($bp) {
-  @media (min-width: $bp) {
-    @content;
-  }
-}
-
 @mixin max-width($bp) {
   @media (max-width: $bp) {
     @content;
@@ -26,6 +20,18 @@
 
 @mixin width-from-to($minValue, $maxValue) {
   @media (min-width: $minValue) and (max-width: $maxValue) {
+    @content;
+  }
+}
+
+@mixin max-height($bp) {
+  @media (max-height: $bp) {
+    @content;
+  }
+}
+
+@mixin max-height-landscape($bp) {
+  @media (max-height: $bp) and (orientation: landscape) {
     @content;
   }
 }

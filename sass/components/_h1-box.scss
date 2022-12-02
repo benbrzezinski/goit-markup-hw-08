@@ -9,7 +9,7 @@ h1 {
   letter-spacing: calc(var(--main-letter-spacing) * 2);
   text-align: var(--text-center);
   text-transform: var(--uppercase);
-  padding-inline: 28px;
+  padding-inline: 13px;
   margin-bottom: 30px;
 
   @include rwd(var(--tablet)) {
@@ -30,7 +30,6 @@ h1 {
   background-position: center;
   background-color: #2f303a;
   padding-block: 118px;
-  padding-inline: 15px;
 
   @include retina(2, 192) {
     background-image: url("../images/bg-h1/img-h1-mobile@2x.jpg"),

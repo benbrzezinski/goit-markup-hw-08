@@ -1,24 +1,20 @@
+@use "../utils" as *;
+
 .mobile-nav {
   display: flex;
   flex-direction: column;
   gap: calc(var(--main-gap) + 2px);
   margin-bottom: 302px;
-}
 
-@media (max-height: 635px) {
-  .mobile-nav {
+  @include max-height(635px) {
     margin-bottom: 120px;
   }
-}
 
-@media (orientation: landscape) and (max-height: 644px) {
-  .mobile-nav {
+  @include max-height-landscape(644px) {
     margin-bottom: 70px;
   }
-}
 
-@media (orientation: landscape) and (max-height: 350px) {
-  .mobile-nav {
+  @include max-height-landscape(350px) {
     margin-bottom: 40px;
   }
 }

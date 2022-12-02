@@ -9,9 +9,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-block: 10px;
-  padding-inline: 15px;
 
   @include rwd(var(--tablet)) {
-    padding-block: 0;
+    padding: 0 15px;
   }
 }

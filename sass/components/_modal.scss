@@ -12,8 +12,19 @@
   height: 94%;
   max-height: 609px;
 
-  @include max-width(485px) {
-    overflow: scroll;
+  @include max-width(470px) {
+    overflow-y: scroll;
+  }
+
+  @include max-height-landscape(648px) {
+    overflow-y: scroll;
+  }
+
+  @include rwd(var(--desktop)) {
+    width: 528px;
+    height: 581px;
+    max-width: none;
+    max-height: none;
   }
 }
 

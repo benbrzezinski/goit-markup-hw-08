@@ -1,8 +1,10 @@
 @use "../utils" as *;
 
-// .sm-footer-box {
-//   padding-top: 11px;
-// }
+.sm-footer-box {
+  @include rwd(var(--desktop)) {
+    padding-top: 12px;
+  }
+}
 
 .sm-footer-box__header {
   color: var(--main-background-color);
@@ -12,6 +14,10 @@
   letter-spacing: var(--main-letter-spacing);
   text-transform: var(--uppercase);
   margin-bottom: 20px;
+
+  @include rwd(var(--desktop)) {
+    text-align: initial;
+  }
 }
 
 .sm-footer {

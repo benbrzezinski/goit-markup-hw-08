@@ -5,6 +5,10 @@
   justify-content: center;
   gap: 10px;
   margin-bottom: 24px;
+
+  @include rwd(var(--desktop)) {
+    margin-bottom: 30px;
+  }
 }
 
 .sm-team__link {
