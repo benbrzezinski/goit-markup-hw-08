@@ -7,7 +7,7 @@
     margin-bottom: 0;
   }
 
-  li:nth-child(1) {
+  .contacts-footer__item {
     margin-bottom: 8px;
 
     @include rwd(var(--desktop)) {

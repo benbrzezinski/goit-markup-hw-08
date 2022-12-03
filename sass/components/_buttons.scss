@@ -1,4 +1,15 @@
 @use "../utils" as *;
+$btnMaxW: 423px;
+
+@mixin btn-x {
+  @include max-width($btnMaxW) {
+    padding-inline: 0;
+  }
+
+  @include rwd(var(--desktop)) {
+    padding-inline: 22px;
+  }
+}
 
 .buttons {
   display: flex;
@@ -10,6 +21,11 @@
 
   @include rwd(var(--tablet)) {
     margin-bottom: 30px;
+  }
+
+  @include rwd(var(--desktop)) {
+    margin-top: 94px;
+    margin-bottom: 50px;
   }
 }
 
@@ -34,9 +50,9 @@
     box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08),
       0 2px 2px rgba(0, 0, 0, 0.12);
   }
-  @include max-width(423px) {
+
+  @include max-width($btnMaxW) {
     width: 110px;
-    padding-inline: 0;
   }
 
   @include max-width(375px) {
@@ -47,39 +63,29 @@
 .btn-1 {
   padding-inline: 13px;
 
-  @include max-width(423px) {
-    padding-inline: 0;
-  }
+  @include btn-x;
 }
 
 .btn-2 {
   padding-inline: 40px;
 
-  @include max-width(423px) {
-    padding-inline: 0;
-  }
+  @include btn-x;
 }
 
 .btn-3 {
   padding-inline: 38px;
 
-  @include max-width(423px) {
-    padding-inline: 0;
-  }
+  @include btn-x;
 }
 
 .btn-4 {
   padding-inline: 28px;
 
-  @include max-width(423px) {
-    padding-inline: 0;
-  }
+  @include btn-x;
 }
 
 .btn-5 {
   padding-inline: 27px;
 
-  @include max-width(423px) {
-    padding-inline: 0;
-  }
+  @include btn-x;
 }

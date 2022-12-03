@@ -5,8 +5,8 @@ $fontSizeProject: 18px;
   @include flex;
   padding-bottom: 60px;
 
-  @include rwd(var(--tablet)) {
-    justify-content: flex-start;
+  @include rwd(var(--desktop)) {
+    padding-bottom: 94px;
   }
 }
 
@@ -21,6 +21,12 @@ $fontSizeProject: 18px;
 
     .project__overlay {
       transform: translateY(0);
+    }
+  }
+
+  &:last-child {
+    @include width-from-to($tablet, $maxTablet) {
+      margin-right: 385px;
     }
   }
 }
@@ -53,6 +59,11 @@ $fontSizeProject: 18px;
   @include max-width(360px) {
     padding-inline: 10px;
   }
+
+  @include rwd(var(--desktop)) {
+    padding-left: 24px;
+    padding-right: 45px;
+  }
 }
 
 .project__case {
@@ -62,10 +73,6 @@ $fontSizeProject: 18px;
 
   @include max-width(360px) {
     padding-left: 16px;
-  }
-
-  @include rwd(var(--tablet)) {
-    padding-left: 19px;
   }
 }
 

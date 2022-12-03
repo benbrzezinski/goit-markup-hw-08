@@ -10,7 +10,7 @@
   display: flex;
   gap: 46px;
 
-  @include width-from-to($tablet, 1199px) {
+  @include width-from-to($tablet, $maxTablet) {
     gap: calc(var(--main-gap) * 2);
   }
 }
