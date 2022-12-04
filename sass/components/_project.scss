@@ -1,5 +1,6 @@
 @use "../utils" as *;
 $fontSizeProject: 18px;
+$projectMaxW: 360px;
 
 .project {
   @include flex;
@@ -56,7 +57,7 @@ $fontSizeProject: 18px;
     letter-spacing: var(--main-letter-spacing);
   }
 
-  @include max-width(360px) {
+  @include max-width($projectMaxW) {
     padding-inline: 10px;
   }
 
@@ -71,7 +72,7 @@ $fontSizeProject: 18px;
   border-top: none;
   padding: 20px 0 19px 23px;
 
-  @include max-width(360px) {
+  @include max-width($projectMaxW) {
     padding-left: 16px;
   }
 }
@@ -79,7 +80,7 @@ $fontSizeProject: 18px;
 .project__name {
   font-size: $fontSizeProject;
   line-height: 2;
-  letter-spacing: calc(var(--main-letter-spacing) * 2);
+  letter-spacing: var(--third-letter-spacing);
   margin-bottom: 4px;
 
   @include max-width(381px) {

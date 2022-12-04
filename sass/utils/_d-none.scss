@@ -1,5 +1,6 @@
 @use "./variables" as *;
 @use "./mixins" as *;
+$displayNoneMaxW: 767px;
 
 .d-none {
   @include max-width($maxTablet) {
@@ -8,13 +9,13 @@
 }
 
 .d-none-nav-contacts {
-  @include max-width(767px) {
+  @include max-width($displayNoneMaxW) {
     display: none;
   }
 }
 
 ul.d-none-nav-contacts {
-  @include max-width(767px) {
+  @include max-width($displayNoneMaxW) {
     display: none;
   }
 }

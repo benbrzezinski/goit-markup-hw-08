@@ -1,5 +1,6 @@
 $tablet: 768px;
 $maxTablet: 1199px;
+$desktop: 1200px;
 
 :root {
   --main-text-color: #212121;
@@ -10,19 +11,24 @@ $maxTablet: 1199px;
   --main-icons-color: #afb1b8;
   --secondary-icons-color: #000;
   --main-font-size: 14px;
+  --secondary-font-size: 12px;
   --main-font-weight: 700;
   --secondary-font-weight: 500;
   --main-line-height: 1.14;
+  --secondary-line-height: 1.17;
+  --third-line-height: 1.71;
   --main-letter-spacing: 0.03em;
   --secondary-letter-spacing: 0.02em;
+  --third-letter-spacing: 0.06em;
   --text-center: center;
   --uppercase: uppercase;
   --main-border-radius: 4px;
   --pointer: pointer;
   --main-gap: 30px;
+  --secondary-gap: 10px;
   --transition-duration: 250ms;
   --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
   --mobile: 480px;
   --tablet: #{$tablet};
-  --desktop: 1200px;
+  --desktop: #{$desktop};
 }

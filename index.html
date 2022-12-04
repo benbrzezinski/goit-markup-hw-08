@@ -36,87 +36,6 @@
               <use xlink:href="./images/icons.svg#icon-menu"></use>
             </svg>
           </button>
-          <div class="mobile-menu">
-            <button
-              class="mobile-menu__toggle mobile-menu__toggle--setup close-menu"
-              type="button"
-            >
-              <svg class="mobile-menu__icon" width="40" height="40">
-                <use xlink:href="./images/icons.svg#icon-mobile-menu"></use>
-              </svg>
-            </button>
-            <nav>
-              <ul class="mobile-nav">
-                <li class="mobile-nav__item">
-                  <a
-                    href="./index.html"
-                    class="mobile-nav__link mobile-nav__link--color link"
-                    >Agencja</a
-                  >
-                </li>
-                <li class="mobile-nav__item">
-                  <a href="./portfolio.html" class="mobile-nav__link link"
-                    >Portfolio</a
-                  >
-                </li>
-                <li class="mobile-nav__item">
-                  <a href="#" class="mobile-nav__link link">Kontakt</a>
-                </li>
-              </ul>
-            </nav>
-            <ul class="contacts-mobile">
-              <li>
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="contacts-mobile__link contacts-mobile__link--different link"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li>
-                <a href="tel:+48111111111" class="contacts-mobile__link link"
-                  >+48 111 111 111</a
-                >
-              </li>
-            </ul>
-            <ul class="sm-mobile-menu">
-              <li class="sm-mobile-menu__item">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="nofollow noopener noreferrer"
-                  class="sm-mobile-menu__link link"
-                  >Instagram</a
-                >
-              </li>
-              <li class="sm-mobile-menu__item">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="nofollow noopener noreferrer"
-                  class="sm-mobile-menu__link link"
-                  >Twitter</a
-                >
-              </li>
-              <li class="sm-mobile-menu__item">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="nofollow noopener noreferrer"
-                  class="sm-mobile-menu__link link"
-                  >Facebook</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="nofollow noopener noreferrer"
-                  class="sm-mobile-menu__link link"
-                  >LinkedIn</a
-                >
-              </li>
-            </ul>
-          </div>
           <nav class="nav-wrapper d-none-nav-contacts">
             <ul class="nav">
               <li class="nav__item">
@@ -799,6 +718,89 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu">
+      <button
+        class="mobile-menu__toggle mobile-menu__toggle--setup close-menu"
+        type="button"
+      >
+        <svg class="mobile-menu__icon" width="40" height="40">
+          <use xlink:href="./images/icons.svg#icon-mobile-menu"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="mobile-nav">
+          <li class="mobile-nav__item">
+            <a
+              href="./index.html"
+              class="mobile-nav__link mobile-nav__link--color link"
+              >Agencja</a
+            >
+          </li>
+          <li class="mobile-nav__item">
+            <a href="./portfolio.html" class="mobile-nav__link link"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#" class="mobile-nav__link link">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="contacts-mobile">
+        <li>
+          <a
+            href="mailto:info@devstudio.com"
+            class="contacts-mobile__link contacts-mobile__link--different link"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a
+            href="tel:+48111111111"
+            class="contacts-mobile__link contacts-mobile__link--color-switch link"
+            >+48 111 111 111</a
+          >
+        </li>
+      </ul>
+      <ul class="sm-mobile-menu">
+        <li class="sm-mobile-menu__item">
+          <a
+            href="#"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            class="sm-mobile-menu__link link"
+            >Instagram</a
+          >
+        </li>
+        <li class="sm-mobile-menu__item">
+          <a
+            href="#"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            class="sm-mobile-menu__link link"
+            >Twitter</a
+          >
+        </li>
+        <li class="sm-mobile-menu__item">
+          <a
+            href="#"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            class="sm-mobile-menu__link link"
+            >Facebook</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            class="sm-mobile-menu__link link"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__close-btn" type="button" data-modal-close>
@@ -887,7 +889,13 @@
         </form>
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

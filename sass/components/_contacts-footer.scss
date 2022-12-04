@@ -19,7 +19,7 @@
 .contacts-footer__link {
   color: rgba(255, 255, 255, 0.6);
   font-size: var(--main-font-size);
-  line-height: 1.71;
+  line-height: var(--third-line-height);
   letter-spacing: var(--main-letter-spacing);
   transition: color var(--transition-duration) var(--cubic-bezier);
 

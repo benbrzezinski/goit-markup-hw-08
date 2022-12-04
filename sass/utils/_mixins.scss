@@ -1,45 +1,45 @@
 @mixin rwd($breakpoint) {
   @if $breakpoint == var(--tablet) {
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
       @content;
     }
   }
 
   @if $breakpoint == var(--desktop) {
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
       @content;
     }
   }
 }
 
 @mixin max-width($bp) {
-  @media (max-width: $bp) {
+  @media screen and (max-width: $bp) {
     @content;
   }
 }
 
 @mixin width-from-to($minValue, $maxValue) {
-  @media (min-width: $minValue) and (max-width: $maxValue) {
+  @media screen and (min-width: $minValue) and (max-width: $maxValue) {
     @content;
   }
 }
 
 @mixin max-height($bp) {
-  @media (max-height: $bp) {
+  @media screen and (max-height: $bp) {
     @content;
   }
 }
 
 @mixin max-height-landscape($bp) {
-  @media (max-height: $bp) and (orientation: landscape) {
+  @media screen and (max-height: $bp) and (orientation: landscape) {
     @content;
   }
 }
 
-@mixin retina($value, $dpi) {
-  @media (min-device-pixel-ratio: $value),
-  (min-resolution: #{$dpi}dpi),
-  (min-resolution: #{$value}dppx) {
+@mixin retina($value, $dpi, $bp) {
+  @media screen and (min-device-pixel-ratio: $value) and (min-width: $bp),
+  screen and (min-resolution: #{$dpi}dpi) and (min-width: $bp),
+  screen and (min-resolution: #{$value}dppx) and (min-width: $bp) {
     @content;
   }
 }
@@ -49,7 +49,7 @@
   color: var(--main-background-color);
   font-weight: var(--main-font-weight);
   line-height: 1.88;
-  letter-spacing: calc(var(--main-letter-spacing) * 2);
+  letter-spacing: var(--third-letter-spacing);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: var(--main-border-radius);
   border: none;

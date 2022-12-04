@@ -3,7 +3,7 @@
 .sm-team {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: var(--secondary-gap);
   margin-bottom: 24px;
 
   @include rwd(var(--desktop)) {

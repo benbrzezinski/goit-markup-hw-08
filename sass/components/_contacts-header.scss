@@ -7,7 +7,7 @@
 
   @include width-from-to($tablet, $maxTablet) {
     flex-direction: column;
-    gap: 10px;
+    gap: var(--secondary-gap);
   }
 }
 
@@ -20,8 +20,8 @@
 .contacts-header__link {
   color: var(--secondary-text-color);
   font-weight: var(--secondary-font-weight);
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: var(--secondary-font-size);
+  line-height: var(--secondary-line-height);
   letter-spacing: var(--secondary-letter-spacing);
   transition: color var(--transition-duration) var(--cubic-bezier);
 

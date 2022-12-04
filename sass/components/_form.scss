@@ -24,8 +24,8 @@ $letterSpacingForm: 0.01em;
 
 .form__text {
   color: var(--secondary-text-color);
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: var(--secondary-font-size);
+  line-height: var(--secondary-line-height);
   letter-spacing: $letterSpacingForm;
   margin-bottom: 4px;
 }
@@ -77,8 +77,8 @@ $letterSpacingForm: 0.01em;
     letter-spacing: $letterSpacingForm;
 
     @include rwd(var(--desktop)) {
-      font-size: 12px;
-      line-height: 1.17;
+      font-size: var(--secondary-font-size);
+      line-height: var(--secondary-line-height);
     }
   }
 }

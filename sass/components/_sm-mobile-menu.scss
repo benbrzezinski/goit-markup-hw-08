@@ -1,12 +1,13 @@
 @use "../utils" as *;
+$smMenuMaxW: 385px;
 
 .sm-mobile-menu {
   display: flex;
-  gap: 20px;
+  gap: calc(var(--secondary-gap) * 2);
   flex-wrap: wrap;
 
-  @include max-width(385px) {
-    gap: 12px;
+  @include max-width($smMenuMaxW) {
+    gap: calc(var(--secondary-gap) + 2px);
   }
 }
 
@@ -23,7 +24,7 @@
     background-color: var(--main-text-color);
     opacity: 0.2;
 
-    @include max-width(385px) {
+    @include max-width($smMenuMaxW) {
       right: -6px;
     }
   }

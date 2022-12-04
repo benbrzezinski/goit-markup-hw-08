@@ -1,4 +1,5 @@
 @use "../utils" as *;
+$lineHeightTeam: 1.19;
 
 .team-box {
   background-color: var(--secondary-background-color);
@@ -22,7 +23,7 @@
 .team__name {
   font-size: 16px;
   font-weight: var(--secondary-font-weight);
-  line-height: 1.19;
+  line-height: $lineHeightTeam;
   letter-spacing: var(--main-letter-spacing);
   text-align: var(--text-center);
   margin-bottom: 10px;
@@ -30,7 +31,7 @@
 
 .team__text {
   color: var(--secondary-text-color);
-  line-height: 1.19;
+  line-height: $lineHeightTeam;
   letter-spacing: var(--main-letter-spacing);
   text-align: var(--text-center);
   margin-bottom: 16px;

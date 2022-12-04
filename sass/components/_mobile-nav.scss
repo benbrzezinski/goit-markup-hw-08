@@ -26,6 +26,11 @@
   line-height: 1.18;
   letter-spacing: var(--secondary-letter-spacing);
 
+  &:hover,
+  &:focus {
+    color: var(--main-selection-color);
+  }
+
   &--color {
     color: var(--main-selection-color);
   }
