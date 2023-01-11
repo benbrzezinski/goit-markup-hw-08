@@ -5,12 +5,18 @@
 }
 
 .contacts-mobile__link {
+  display: inline-block;
   color: var(--secondary-text-color);
   font-size: 24px;
   font-weight: var(--secondary-font-weight);
   line-height: var(--secondary-line-height);
   letter-spacing: var(--secondary-letter-spacing);
-  display: inline-block;
+  transition: color var(--transition-duration) var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
+    color: var(--main-selection-color);
+  }
 
   &--different {
     color: var(--main-selection-color);
@@ -20,15 +26,6 @@
 
     @include max-width(360px) {
       font-size: 28px;
-    }
-  }
-
-  &--color-switch {
-    transition: color var(--transition-duration) var(--cubic-bezier);
-
-    &:hover,
-    &:focus {
-      color: var(--main-selection-color);
     }
   }
 }

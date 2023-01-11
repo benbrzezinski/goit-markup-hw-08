@@ -25,6 +25,7 @@
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: var(--secondary-letter-spacing);
+  transition: color var(--transition-duration) var(--cubic-bezier);
 
   &:hover,
   &:focus {

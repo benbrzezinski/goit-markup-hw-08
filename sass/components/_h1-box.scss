@@ -31,12 +31,12 @@ h1 {
   background-color: #2f303a;
   padding-block: 118px;
 
-  @include retina(2, 192, 310) {
+  @include retina(2, 192, 310px) {
     background-image: url("../images/bg-h1/img-h1-mobile@2x.jpg"),
       linear-gradient(90deg, $rgbaH1Box, $rgbaH1Box);
   }
 
-  @include retina(3, 288, 310) {
+  @include retina(3, 288, 310px) {
     background-image: url("../images/bg-h1/img-h1-mobile@3x.jpg"),
       linear-gradient(90deg, $rgbaH1Box, $rgbaH1Box);
   }

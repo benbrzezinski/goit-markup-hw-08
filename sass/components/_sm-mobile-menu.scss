@@ -14,7 +14,7 @@ $smMenuMaxW: 385px;
 .sm-mobile-menu__item {
   position: relative;
 
-  &::after {
+  &:not(:last-child)::after {
     content: "";
     width: 1px;
     height: 22px;

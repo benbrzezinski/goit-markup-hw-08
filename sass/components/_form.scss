@@ -27,6 +27,7 @@ $letterSpacingForm: 0.01em;
   font-size: var(--secondary-font-size);
   line-height: var(--secondary-line-height);
   letter-spacing: $letterSpacingForm;
+  margin-left: 5px;
   margin-bottom: 4px;
 }
 
@@ -38,9 +39,22 @@ $letterSpacingForm: 0.01em;
   transition: fill var(--transition-duration) var(--cubic-bezier);
 }
 
-.form__box:focus-within {
-  .form__icon {
-    fill: var(--main-selection-color);
+.form__box {
+  position: relative;
+
+  &:focus-within {
+    .form__icon {
+      fill: var(--main-selection-color);
+    }
+  }
+
+  &--checkbox {
+    @include max-width(470px) {
+      width: 232px;
+      text-align: center;
+      padding-left: 40px;
+      margin: auto;
+    }
   }
 }
 

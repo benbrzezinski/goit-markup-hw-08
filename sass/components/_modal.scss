@@ -37,9 +37,6 @@
   background-color: var(--main-background-color);
   @include bordered(rgba(0, 0, 0, 0.1));
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: var(--pointer);
   padding: 0;
 
@@ -54,4 +51,7 @@
 .modal__icon {
   fill: var(--secondary-icons-color);
   transition: fill var(--transition-duration) var(--cubic-bezier);
+  position: absolute;
+  top: 9px;
+  left: 8px;
 }

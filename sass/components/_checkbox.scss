@@ -2,7 +2,15 @@
 $checkboxMaxW: 470px;
 
 .checkbox {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 6px;
+  left: 2px;
+
+  @include max-width($checkboxMaxW) {
+    top: 16px;
+    left: 6px;
+  }
 
   &:checked {
     + .checkbox__label {
@@ -34,7 +42,9 @@ $checkboxMaxW: 470px;
     margin-right: 8px;
 
     @include max-width($checkboxMaxW) {
-      margin-bottom: 8px;
+      position: absolute;
+      top: 12px;
+      left: -36px;
     }
 
     @include rwd(var(--desktop)) {
@@ -53,7 +63,8 @@ $checkboxMaxW: 470px;
   transition: opacity 75ms ease-in;
 
   @include max-width($checkboxMaxW) {
-    top: 3px;
+    top: 15px;
+    left: -33px;
   }
 
   @include max-height-landscape(648px) {
