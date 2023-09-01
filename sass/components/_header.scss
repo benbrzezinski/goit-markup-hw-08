@@ -1,7 +1,9 @@
 @use "../utils" as *;
 
 header {
+  max-width: 1600px;
   border-bottom: 1px solid #ececec;
+  margin: auto;
 }
 
 .header {
