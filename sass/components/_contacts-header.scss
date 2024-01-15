@@ -26,7 +26,7 @@
   transition: color var(--transition-duration) var(--cubic-bezier);
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     color: var(--main-selection-color);
   }
 }

@@ -65,7 +65,7 @@ $letterSpacingForm: 0.01em;
   outline: none;
   transition: border-color var(--transition-duration) var(--cubic-bezier);
 
-  &:focus {
+  &:focus-visible {
     border-color: var(--main-selection-color);
   }
 }

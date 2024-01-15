@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - WebStudio</title>
+    <meta name="theme-color" content="#fff" />
+    <title>WebStudio - Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="./images/favicon/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,6 +16,10 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/notiflix@3.2.7/src/notiflix.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -84,7 +90,9 @@
       <div class="container">
         <ul class="buttons">
           <li>
-            <button class="buttons__item btn-1" type="button">Wszystkie</button>
+            <button class="buttons__item btn-1 active" type="button">
+              Wszystkie
+            </button>
           </li>
           <li>
             <button class="buttons__item btn-2" type="button">Strony</button>
@@ -100,7 +108,7 @@
           </li>
         </ul>
         <ul class="project">
-          <li class="project__item">
+          <li class="project__item" data-type="strony">
             <figure>
               <div class="project__box">
                 <img
@@ -137,7 +145,7 @@
               </div>
             </figure>
           </li>
-          <li class="project__item">
+          <li class="project__item" data-type="design">
             <figure>
               <div class="project__box">
                 <img
@@ -176,7 +184,7 @@
               </div>
             </figure>
           </li>
-          <li class="project__item">
+          <li class="project__item" data-type="aplikacje">
             <figure>
               <div class="project__box">
                 <img
@@ -213,7 +221,7 @@
               </div>
             </figure>
           </li>
-          <li class="project__item">
+          <li class="project__item" data-type="marketing">
             <figure>
               <div class="project__box">
                 <img
@@ -250,7 +258,7 @@
               </div>
             </figure>
           </li>
-          <li class="project__item">
+          <li class="project__item" data-type="aplikacje">
             <figure>
               <div class="project__box">
                 <img
@@ -287,7 +295,7 @@
               </div>
             </figure>
           </li>
-          <li class="project__item">
+          <li class="project__item" data-type="strony">
             <figure>
               <div class="project__box">
                 <img
@@ -324,7 +332,7 @@
               </div>
             </figure>
           </li>
-          <li class="project__item">
+          <li class="project__item" data-type="design">
             <figure>
               <div class="project__box">
                 <img
@@ -361,7 +369,7 @@
               </div>
             </figure>
           </li>
-          <li class="project__item">
+          <li class="project__item" data-type="marketing">
             <figure>
               <div class="project__box">
                 <img
@@ -398,7 +406,7 @@
               </div>
             </figure>
           </li>
-          <li class="project__item">
+          <li class="project__item" data-type="aplikacje">
             <figure>
               <div class="project__box">
                 <img
@@ -520,12 +528,7 @@
               </li>
             </ul>
           </div>
-          <form
-            class="newsletter"
-            name="newsletter_form"
-            autocomplete="on"
-            method="post"
-          >
+          <form class="newsletter" name="newsletter_form" autocomplete="on">
             <h4 class="newsletter__header">Zapisz się do newslettera</h4>
             <label>
               <input
@@ -633,6 +636,12 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/notiflix@3.2.7/dist/notiflix-aio-3.2.7.min.js"
+    ></script>
+    <script defer src="./js/sort-projects.js"></script>
     <script defer src="./js/mobile-menu.js"></script>
+    <script defer src="./js/newsletter.js"></script>
   </body>
 </html>

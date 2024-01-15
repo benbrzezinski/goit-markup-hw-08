@@ -51,7 +51,7 @@
   transition: fill var(--transition-duration) var(--cubic-bezier);
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     fill: var(--main-selection-color);
   }
 }

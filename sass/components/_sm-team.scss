@@ -15,7 +15,7 @@
   @include sm(var(--main-background-color));
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     .sm-team__icon {
       fill: var(--main-background-color);
     }
