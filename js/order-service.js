@@ -14,6 +14,7 @@ const orderService = e => {
   );
 
   modal.classList.add("is-hidden");
+  bodyScrollLock.enableBodyScroll(document.body);
   e.currentTarget.reset();
 };
 
