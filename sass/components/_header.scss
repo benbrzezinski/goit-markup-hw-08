@@ -1,9 +1,10 @@
 @use "../utils" as *;
 
 header {
+  width: 100%;
   max-width: 1600px;
   border-bottom: 1px solid #ececec;
-  margin: auto;
+  margin-inline: auto;
 }
 
 .header {
